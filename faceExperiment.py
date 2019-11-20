@@ -94,13 +94,13 @@ while trial <7:
         
     break
 
-conclusion = visual.TextStim(win, text = 'Thank you for participating in this experiment! Please call the experimenter for the next steps.',pos = (0,0), color = 'black', height = 0.07) #note default color is white, which you can't see on a white screen!
+conclusion = visual.TextStim(win, text = 'Thank you for participating in this experiment! Please call the experimenter for the next steps. To exit the screen, please press the letter e.',pos = (0,0), color = 'black', height = 0.07) #note default color is white, which you can't see on a white screen!
 
 conclusion.draw()
 
 win.flip()
 
-keys = event.waitKeys(keyList = ('s'))
+keys = event.waitKeys(keyList = ('e'))
 
 core.wait(1)
 
